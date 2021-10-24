@@ -22,7 +22,7 @@ if (alphLen <= 1){
 }
 else{
     for (j in alph){
-        entropy += -1 * alph[j] * Math.log2(alph[j])/ Math.log2(alphLen);
+        entropy -= alph[j] * Math.log2(alph[j])/ Math.log2(alphLen);
     }
 }
 console.log(entropy);
